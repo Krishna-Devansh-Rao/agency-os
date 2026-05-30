@@ -68,7 +68,7 @@ export async function getDashboardKPIs() {
   ])
 
   const totalClients = clientsResult.count ?? 0
-  const activeClients = (clientsResult.data ?? []).filter(c => c.status === 'active').length
+  const activeClients = ((clientsResult.data as any[]) ?? []).filter((c: any) => c.status === 'active').length
   const totalRevenue = (paymentsResult.data ?? []).reduce((sum, p) => sum + Number(p.amount), 0)
   const monthlyRevenue = (monthlyResult.data ?? []).reduce((sum, p) => sum + Number(p.amount), 0)
   const yearlyRevenue = (yearlyResult.data ?? []).reduce((sum, p) => sum + Number(p.amount), 0)
