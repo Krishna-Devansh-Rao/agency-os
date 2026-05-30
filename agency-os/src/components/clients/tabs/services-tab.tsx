@@ -1,1 +1,0 @@
-export { ClientServicesTab } from './index'

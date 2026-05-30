@@ -1,1 +1,0 @@
-export { ClientPaymentsTab } from './index'
