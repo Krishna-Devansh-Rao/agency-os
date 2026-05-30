@@ -1,0 +1,1 @@
+export { ClientNotesTab } from './index'
