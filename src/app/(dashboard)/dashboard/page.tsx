@@ -4,8 +4,8 @@ import { getDashboardKPIs, getMonthlyOverview, getRevenueChartData, getRevenueBy
 import { getExpiringClients } from '@/actions/clients'
 import { KPICard } from '@/components/dashboard/kpi-card'
 import { RevenueChart } from '@/components/dashboard/revenue-chart'
-import { RevenueDonut } from '@/components/dashboard/revenue-donut'
-import { ExpiringClientsWidget } from '@/components/dashboard/expiring-clients'
+import { RevenueDonut } from '@/components/dashboard/revenue-chart'
+import { ExpiringClientsWidget } from '@/components/dashboard/monthly-overview'
 import { MonthlyOverviewCard } from '@/components/dashboard/monthly-overview'
 import { KPICardSkeleton } from '@/components/dashboard/skeletons'
 
